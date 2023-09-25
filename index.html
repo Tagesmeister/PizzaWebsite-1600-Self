@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mogra&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+    <title>Pizza Online Shop</title>
+
+    <style>
+
+    </style>
+
+<script>
+
+function toggleDarkMode() { 
+var body = document.body;
+body.classList.toggle("dark-mode");
+  
+}
+  </script>
+
+  </head>
+
+  <body>
+    <!--
+          <input type="radio" name="filter" id="filterAll" checked>
+          <label for="filterAll">Alle Pizzen</label>
+  
+          <input type="radio" name="filter" id="filterAmbatukam">
+          <label for="filterAmbatukam">Nur Ambatukam</label>
+      -->
+    
+
+    <div class="mainDiv">
+      <header>
+        <h1>Willkommen auf dem Pizza&nbsp;Online&nbsp;Shop</h1>
+      </header>
+      <nav>
+        <a href="#pizzas">Pizzen</a>
+        <a href="#infos">Infos</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
+
+      <input id="dark-mode" type="checkbox">
+
+      <label for="dark-mode" onclick="toggleDarkMode()">Dark mode</label>
+
+      <main>
+        <div id="pizzas">
+        <div class="Pizzas-Container">
+          <div class="pizza-item">
+            <div class="pizza-content">
+              <img src="margherita.jpg" alt="Margherita" />
+              <h2>Margherita</h2>
+              <button>In den Warenkorb</button>
+              <div class="pizza-info">
+                <h4>Infos</h4>
+                <p>Zutaten: Tomaten, Mozzarella, Basilikum, Olivenöl</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="pizza-item">
+            <img src="Funghi.jpg" alt="Funghi" />
+            <h2>Funghi</h2>
+            <button>In den Warenkorb</button>
+            <div class="pizza-info">
+              <h4>Infos</h4>
+              <p>Zutaten: Tomaten, Mozzarella, Champignons, Olivenöl</p>
+            </div>
+          </div>
+
+          <div class="pizza-item">
+            <img src="Prosciutto.jpg" alt="Proscuitto" />
+            <h2>Proscuitto</h2>
+            <div class="button-container">
+              <button>In den Warenkorb</button>
+              <div class="pizza-info">
+                <h4>Infos</h4>
+                <p>Zutaten: Tomatensauce, Mozzarella, Schinken</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="pizza-item">
+            <img src="Rucola.jpg" alt="Rucola" />
+            <h2>Rucola</h2>
+            <div class="button-container">
+              <button>In den Warenkorb</button>
+              <div class="pizza-info">
+                <h4>Infos</h4>
+                <p>Zutaten: Tomatensauce, Parmesan, Oliven, Rucola</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="pizza-item">
+            <img src="Rustica.jpg" alt="Rustica" />
+            <h2>Rustica</h2>
+            <div class="button-container">
+              <button>In den Warenkorb</button>
+              <div class="pizza-info">
+                <h4>Infos</h4>
+                <p>Zutaten: Tomatensauce, Speck, Mozzarella, Ei</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="pizza-item ambatukam">
+            <img src="Ambatukam.jpg" alt="Ambatukam" />
+            <h2>Dreamybull</h2>
+            <div class="button-container">
+              <button>In den Warenkorb</button>
+              <div class="pizza-info">
+                <h4>Infos</h4>
+                <p>Zutaten: AMBATUKAM, OHMAYGOD, AMBASING</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="pizza-item">
+            <img src="Tonno.jpg" alt="Tonno" />
+            <h2>Tonno</h2>
+            <div class="button-container">
+              <button>In den Warenkorb</button>
+              <div class="pizza-info">
+                <h4>Infos</h4>
+                <p>Zutaten: Tomatensauce, Thon, Zwiebel, Parmesan</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="infos">
+        <div class="header-container">
+
+        <header class="under-header">
+          <h2>Infos</h2>
+        </header>
+
+        <div class="infoBeauty">
+          <br>
+          <h2>Die Pizzen</h2>
+          <p>
+            Alle Pizzen wurden mit vollem italienischem Herz und Stolz hergestellt. Die Rezepte wurden von Experten umgesetzt und versprechen hohe Qualität. Wir haben hier eine Auswahl der beliebtesten Pizzen bereitgestellt, sogar eine Fantasie-Pizza namens Pizza Dreamybull. Ihr könnt euch eine beliebige Pizza auswählen und sie zu einem fairen Preis kaufen. Guten Appetit!</p>
+            <br>
+            <h2>Unsere Marke</h2>
+            <p>
+              Unsere Marke heisst Pizza Italia. Wir erhielten das Recht, die Marke eines berühmten italienischen Pizzabäckers weiterzuverarbeiten und unter dieser Marke unsere Firma zu führen. Seitdem wir unsere Firma nach dieser Marke führen, wurde sie auch in der Schweiz populär.  Dadurch sind wir auf dem Markt auf gutem Kurs.
+            </p>
+            <br>
+            <h2>Über uns</h2>
+              <p>
+                Wir haben diesen Pizzadienst vor einem Jahr eröffnet. Unsere Firma hat seinen Sitz in Baden direkt neben der Kanti. Der Chef dieser Firma ist Dreamybull. Die Angestellten sind jegliche seiner Kollegen die bereits in diversen Pizzerias gearbeitet haben. Das Personal wird in Zukunft noch mehr ausgebaut, sodass wir unser Ziel – die grösste und beste Gastronomie-Firma zu werden – bis 2030 erreichen.
+              </p>
+              <br>
+              
+                <h3>Geschäftsführer</h3>
+              <div class="dreamContainer">
+                <div class="imageWrapper">
+                  <img src="Dreamyboss.jpg" alt="Dreamybull" class="dreamage">
+                  <div class="overlay">Dreamybull</div>
+                </div>
+              </div>
+
+            </div>
+      </div>
+    </div>
+    <div id="kontakt">
+      <div class="header-container">
+
+        <header class="under-header">
+          <h2>Kontakt</h2>
+        </header>
+
+        <div class="kontaktbeauty">
+          <br>
+          <h2>Öffnungszeiten</h2>
+          <p>Mo - Do
+            11:00 - 13:30
+            17:00 - 22:00
+            <br>
+            <br>
+            Fr
+            11:00 - 13:30
+            16:30 - 23:00
+            <br>
+            <br>
+            Sa
+            11:00 - 23:00
+            <br>
+            <br>
+            So
+            11:00 - 22:00</p>
+        <div>
+
+        <div class="imgAnfhart">
+          <h2>Anfahrt</h2>
+        
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19160358.219141345!2d-7.473983394593752!3d40.9146772020914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e6718e9e98b22d%3A0xb8eb7b03342f424!2sWarung%20Ambatuk%C3%A0m!5e0!3m2!1sde!2sch!4v1684827844116!5m2!1sde!2sch" id="google-map" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>      
+
+        </div>
+
+        </div>
+      </div>
+    </div>
+      </main>
+
+      <footer>
+        <p>&copy; 2023 - Meine Webseite</p>
+      </footer>
+    </div>
+  </body>
+</html>
