@@ -1,0 +1,301 @@
+.pizza-item {
+  display: block;
+}
+#filterAmbatukam:checked ~ .mainDiv .pizza-item:not(.ambatukam) {
+  display: none;
+}
+
+.pizza-item img {
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.pizza-item:hover img {
+  filter: grayscale(0%);
+}    
+
+:root {
+   --background-light: #ffffff; /* Default background color */
+   --background-dark: #333; /* Dark mode background color */
+}
+
+body {
+    background-color: var(--background-light);
+    transition: background-color 0.3s ease;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: var(--background-dark);
+}
+
+.dark-mode .infoBeauty {
+  background-color: #333;
+  color: #ffffff; 
+}
+
+.dark-mode .kontaktbeauty {
+  background-color: #333;
+  color: #ffffff;
+}
+
+/* Hide the checkbox visually */
+#dark-mode {
+    position: absolute;
+    left: -9999px;
+}
+
+/* Style the label as a toggle switch */
+#dark-mode + label {
+    display: inline-block;
+    cursor: pointer;
+    padding: 5px 10px;
+    width: 90px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #e4e4e4;
+    border-radius: 25px;
+    
+}
+
+/* Change background color on checkbox toggle */
+#dark-mode:checked + label {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: whitesmoke; 
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    background-color: #ff6347;
+    padding: 2rem 0;
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    overflow-wrap: break-word
+}
+
+h2, h3, p {
+overflow-wrap: break-word
+}
+
+      .under-header {
+        background-color: black;
+        padding: 1rem;
+        color: white;
+        text-align: center;
+        font-size: 25px;
+      }
+      .header-container{
+        text-align: center;
+        margin-right: 30px;
+        margin-left: 30px;
+        background-color: whitesmoke;
+      }
+      .infoBeauty{
+        font-family: 'Mogra', cursive;
+        font-size: 20px;
+      }
+      .kontaktbeauty{
+        padding: 15px;
+        background: #fff;
+        color: #333;
+        margin-bottom: 10px;
+        border-radius: 5px;
+      }
+      .kontaktbeauty h2{
+        margin-bottom: 10px;
+      }
+      .kontaktbeauty p {
+        margin-bottom: 15px;
+      }
+      .imgAnfhart{
+        margin-top: 20px
+      }
+
+      nav {
+        display: flex;
+        justify-content: center;
+        background-color: #333;
+        padding: 1rem;
+        color: white;
+      }
+
+      nav a {
+        margin: 0 1rem;
+        transition: color 0.3s;
+      }
+
+      nav a:hover {
+        color: #ff6347;
+      }
+
+      .Pizzas-Container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 2rem;
+      }
+
+      .pizza-item {
+        flex-basis: 20%;
+        margin: 1rem;
+        background: #fff;
+        box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        text-align: center;
+        overflow: hidden;
+        transition: transform 0.3s;
+        height: 390px;
+        min-width: 200px;
+
+      }
+
+      .pizza-item:hover {
+        transform: scale(1.03);
+      }
+
+      .pizza-item img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+
+      .pizza-item h2 {
+        margin: 1rem;
+        font-size: 1.25rem;
+      }
+
+      .pizza-item button {
+        background-color: #ff6347;
+        border: none;
+        color: white;
+        padding: 10px 24px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 10px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      .pizza-item button:hover {
+        background-color: #972f2f;
+      }
+
+      .pizza-info {
+        display: none;
+        padding: 10px;
+        font-size: 0.875rem;
+        background-color: rgba(0, 0, 0, 0.75);
+        color: white;
+      }
+
+      .pizza-item:hover .pizza-info {
+        display: block;
+      }
+
+      footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 2rem 0;
+        margin-top: 2rem;
+      }
+
+      footer p {
+        font-size: 0.875rem;
+      }
+
+      .mainDiv {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+
+      main {
+        flex: 1 0 auto;
+      }
+
+      footer {
+        flex-shrink: 0;
+      }
+
+      .dreamContainer {
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        position: relative;
+        max-width: 100%;
+        min-height: 60vh; 
+      }
+      
+      .imageWrapper {
+        position: relative;
+        max-width: 100%;
+        min-height: 100%;
+      }
+      
+      .dreamage {
+        width: break-word;
+        display: block;
+        min-width: none;
+        max-width: 100%;
+        min-width: 100%;
+        max-height: 375px;
+        min-height: 200px;
+        margin-top: -25px;
+        border: 0;
+      }
+      
+      .overlay {
+        position: absolute;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        color: #f1f1f1;
+        width: 89.3%;
+        height: 25px;
+        transition: .5s ease;
+        opacity: 0;
+        color: white;
+        font-size: 20px;
+        padding: 20px;
+        text-align: center;
+        font-family: "Roboto", sans-serif;
+      }
+      
+      .imageWrapper:hover .overlay {
+        opacity: 1;
+      }
+      
+
+      #google-map {
+        width: break-word;
+        max-width: 250px;
+        min-width: 50px;
+        border: 0;
+      }
+      html{scroll-behavior: smooth;}
